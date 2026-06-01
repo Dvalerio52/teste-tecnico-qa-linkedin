@@ -19,4 +19,5 @@ jobs:
           npm install cypress --save-dev
 
       - name: Executar Testes do Cypress
-        run: npx cypress run --browser chrome
+        # Adicionamos o --headless aqui para rodar em segundo plano na nuvem
+        run: npx cypress run --browser chrome --headless
