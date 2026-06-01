@@ -1,0 +1,15 @@
+{
+  "name": "teste-tecnico-qa-linkedin",
+  "version": "1.0.0",
+  "description": "Automacao de testes no LinkedIn com Cypress e GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "keywords": ["qa", "cypress", "automation", "linkedin"],
+  "author": "Analista de Testes",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  }
+}
