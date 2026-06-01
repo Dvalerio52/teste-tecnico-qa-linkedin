@@ -13,8 +13,10 @@ jobs:
       - name: Checkout do Código
         uses: actions/checkout@v4
 
-      - name: Instalar Dependências e Executar Testes
-        uses: cypress-io/github-action@v6
-        with:
-          build: npm install
-          browser: chrome
+      - name: Inicializar Projeto e Instalar Cypress
+        run: |
+          npm init -y
+          npm install cypress --save-dev
+
+      - name: Executar Testes do Cypress
+        run: npx cypress run --browser chrome
